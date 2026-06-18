@@ -1,8 +1,8 @@
-# SubSort: AI YouTube Subscription Organizer 🤖📺
+# SubSort: AI YouTube Subscription Organizer
 
 An AI-powered Chrome Extension (Manifest V3) that automatically categorizes a user's chaotic YouTube subscription feed into 12 clean, distinct buckets. Built with a modern, asynchronous MLOps pipeline using a fine-tuned DeBERTa-v3-Small architecture.
 
-## 🚀 The Architecture
+## The Architecture
 
 This project utilizes a highly optimized **Client-Thin, Server-Thick** architecture to bypass API rate limits and survive strict cloud hosting memory constraints.
 
@@ -11,7 +11,7 @@ This project utilizes a highly optimized **Client-Thin, Server-Thick** architect
 * **ONNX Quantization:** The backend runs a fine-tuned DeBERTa-v3-Small text classification model, exported to an Int8-quantized ONNX format to perform high-speed inference within a 512MB RAM server limit.
 * **Global Caching:** A relational database caches AI predictions globally, ensuring that popular channels are categorized in milliseconds without redundant compute.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Frontend (Chrome Extension)**
 * Vanilla JavaScript (ES6+)
@@ -25,7 +25,7 @@ This project utilizes a highly optimized **Client-Thin, Server-Thick** architect
 * Supabase / PostgreSQL (Global Cache)
 * Pandas (Data Wrangling)
 
-## 📂 Repository Structure
+## Repository Structure
 
 ├── backend/                  # FastAPI server and ML pipeline
 │   ├── app/                  # API endpoints, models, and database logic
@@ -37,7 +37,7 @@ This project utilizes a highly optimized **Client-Thin, Server-Thick** architect
 ├── .gitignore                
 └── README.md                 
 
-## 🤝 The API Contract
+## The API Contract
 
 To enable parallel development, the frontend and backend strictly adhere to the following JSON payload structure:
 
