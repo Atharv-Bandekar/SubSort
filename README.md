@@ -26,7 +26,7 @@ This project utilizes a highly optimized **Client-Thin, Server-Thick** architect
 * Pandas (Data Wrangling)
 
 ## Repository Structure
-
+```
 ├── backend/                  # FastAPI server and ML pipeline
 │   ├── app/                  # API endpoints, models, and database logic
 │   └── data_engineering/     # Pandas scripts and Kaggle dataset processing
@@ -36,6 +36,7 @@ This project utilizes a highly optimized **Client-Thin, Server-Thick** architect
 │   └── styles.css            # Pill filter styling
 ├── .gitignore                
 └── README.md                 
+```
 
 ## The API Contract
 
